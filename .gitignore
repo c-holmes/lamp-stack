@@ -1,6 +1,6 @@
 # Custom #
 www/*
-*.idea
+.idea/*
 
 # Compiled source #
 ###################

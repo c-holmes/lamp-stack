@@ -1,5 +1,9 @@
 # Ansible Vagrant profile for a LAMP server
 
+## Customized Sections
+* Added PHPmyadmin
+* created synced folder www/ to var/www/html (www folder is ignored in this repo, please create your own once initiated) 
+
 ## Background
 
 Vagrant and VirtualBox (or some other VM provider) can be used to quickly build or rebuild virtual servers.
