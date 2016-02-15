@@ -26,9 +26,9 @@ Vagrant.configure(VAGRANTFILE_API_VERSION) do |config|
   # Ansible provisioner.
   config.vm.provision "ansible" do |ansible|
     ansible.playbook = "provisioning/playbook.yml"
+    ansible.limit = "vagrant"
     ansible.inventory_path = "provisioning/inventory"
     ansible.sudo = true
-    ansible.tags = ["phpmyadmin"] #REMOVE LATER!
   end
 
   config.vm.synced_folder "www/", "/var/www/html", :mount_options => ["dmode=777", "fmode=666"]

@@ -5,7 +5,8 @@ ntp_timezone: America/Chicago
 
 apache_enablerepo: remi
 apache_vhosts:
-  - {servername: "lamp", documentroot: "/var/www/html"}
+  - {servername: "lamp", documentroot: "/var/www/rsvp-site"}
+  - {servername: "lovebythelake.com", documentroot: "/var/www/rsvp-site"}
 
 php_enablerepo: remi
 

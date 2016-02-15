@@ -1,0 +1,10 @@
+---
+workspace: /root
+ntp_timezone: America/Chicago
+
+apache_enablerepo: remi
+
+php_enablerepo: remi
+
+mysql_root_password: root
+mysql_enablerepo: remi

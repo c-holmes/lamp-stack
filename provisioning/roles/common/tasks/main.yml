@@ -1,6 +1,6 @@
 ---
-- name: Updating ubuntu repositories
-  apt: update_cache=yes
+#- name: Updating ubuntu repositories
+#  apt: update_cache=yes
 
-- name: Install Hello World PHP script
-  copy: src=index.php dest=/var/www/index.php mode=0664
+- name: Copy site files
+  copy: src=../../../../www dest=/var mode=0664
